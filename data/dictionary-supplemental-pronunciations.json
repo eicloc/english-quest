@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "source": "English Wiktionary via Wiktextract/Kaikki, accessed 2026-08-22",
+  "license": "CC BY-SA 4.0 and GFDL",
+  "entries": [
+    { "word": "apple", "ipaUS": "/ˈæpəl/", "ipaUK": "/ˈæpəl/" },
+    { "word": "banana", "ipaUS": "/bəˈnænə/", "ipaUK": "/bəˈnɑːnə/" },
+    { "word": "rabbit", "ipaUS": "/ˈɹæbɪt/", "ipaUK": "/ˈɹæbɪt/" },
+    { "word": "schoolbag", "ipaUS": "/ˈskuːl.bæɡ/", "ipaUK": "/ˈskuːl.bæɡ/" }
+  ]
+}
