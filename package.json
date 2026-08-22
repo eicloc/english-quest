@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "node scripts/preview-export.mjs",
     "lint": "eslint .",
-    "typecheck": "tsc --noEmit",
+    "typecheck": "next typegen && tsc --noEmit",
     "test": "vitest",
     "dictionary:import": "node scripts/import-dictionary.mjs",
     "dictionary:audio": "node scripts/build-pronunciation-audio.mjs"
