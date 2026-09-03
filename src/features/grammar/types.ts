@@ -12,6 +12,11 @@ export type GrammarSkill =
 export type GrammarDifficulty = 1 | 2 | 3;
 export type GrammarQuestionType = "choice-gap" | "sentence-sort" | "pair-match" | "category-sort";
 
+export type GrammarQuestionVisual = {
+  emoji: string;
+  altZh: string;
+};
+
 type GrammarQuestionBase = {
   id: string;
   stageId: string;
@@ -25,6 +30,7 @@ type GrammarQuestionBase = {
   hintZh: string;
   explanationZh: string;
   audioText?: string;
+  visual?: GrammarQuestionVisual;
 };
 
 export type GrammarChoiceQuestion = GrammarQuestionBase & {

@@ -29,8 +29,25 @@ describe("grammar question bank", () => {
       expect(question.coverageGroup).toBeTruthy();
       if (question.type === "choice-gap") expect(question.options).toContain(question.correctAnswer);
       if (question.type === "sentence-sort") expect([...question.tokens].sort()).toEqual([...question.correctOrder].sort());
-      if (question.type === "pair-match") expect(Object.keys(question.correctPairs)).toHaveLength(question.leftItems.length);
+      if (question.type === "pair-match") {
+        expect(question.rightItems).toHaveLength(question.leftItems.length);
+        expect(Object.keys(question.correctPairs)).toHaveLength(question.leftItems.length);
+        expect(new Set(Object.values(question.correctPairs)).size).toBe(question.rightItems.length);
+        expect(Object.values(question.correctPairs).every((rightId) => question.rightItems.some((item) => item.id === rightId))).toBe(true);
+      }
       if (question.type === "category-sort") expect(Object.keys(question.correctCategories)).toHaveLength(question.items.length);
+    }
+  });
+
+  it("adds six accessible semantic visuals to every stage", () => {
+    expect(grammarQuestions.filter((question) => question.visual)).toHaveLength(60);
+    for (const stage of grammarStages) {
+      const visuals = getGrammarQuestionsForStage(stage.id).filter((question) => question.visual);
+      expect(visuals).toHaveLength(6);
+      for (const question of visuals) {
+        expect(question.visual?.emoji.trim()).toBeTruthy();
+        expect(question.visual?.altZh.trim()).toBeTruthy();
+      }
     }
   });
 

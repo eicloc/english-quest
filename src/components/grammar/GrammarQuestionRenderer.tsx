@@ -3,17 +3,29 @@
 import { useMemo, useState } from "react";
 import { Check, GripVertical, RotateCcw } from "lucide-react";
 import { getGrammarAnswerText } from "@/features/grammar/evaluator";
-import type { GrammarAttempt, GrammarCategoryQuestion, GrammarMatchQuestion, GrammarQuestion, GrammarResponse, GrammarSortQuestion } from "@/features/grammar/types";
+import type { GrammarAttempt, GrammarCategoryQuestion, GrammarMatchQuestion, GrammarQuestion, GrammarQuestionVisual, GrammarResponse, GrammarSortQuestion } from "@/features/grammar/types";
 
 export function GrammarQuestionRenderer({ question, attempt, disabled, onSubmit }: { question: GrammarQuestion; attempt?: GrammarAttempt; disabled?: boolean; onSubmit: (response: GrammarResponse) => void }) {
   const locked = disabled || Boolean(attempt?.completedAt);
   return (
     <div className="mx-auto w-full max-w-4xl">
+      {question.visual && <QuestionVisual visual={question.visual} />}
       {question.type === "choice-gap" && <ChoiceGame question={question} attempt={attempt} disabled={locked} onSubmit={onSubmit} />}
       {question.type === "sentence-sort" && <SentenceSortGame key={question.id} question={question} disabled={locked} onSubmit={onSubmit} />}
       {question.type === "pair-match" && <PairMatchGame key={question.id} question={question} disabled={locked} onSubmit={onSubmit} />}
       {question.type === "category-sort" && <CategorySortGame key={question.id} question={question} disabled={locked} onSubmit={onSubmit} />}
       <AnswerFeedback question={question} attempt={attempt} />
+    </div>
+  );
+}
+
+function QuestionVisual({ visual }: { visual: GrammarQuestionVisual }) {
+  return (
+    <div role="img" aria-label={visual.altZh} className="relative mx-auto mb-7 flex min-h-28 w-full max-w-lg items-center justify-center overflow-hidden rounded-[28px] border-2 border-white bg-gradient-to-br from-sky-100 via-violet-50 to-amber-50 px-5 py-4 shadow-sm sm:min-h-32">
+      <span aria-hidden="true" className="absolute left-5 top-4 text-xl text-amber-300">✦</span>
+      <span aria-hidden="true" className="absolute bottom-3 right-6 size-8 rounded-full bg-violet-200/60" />
+      <span aria-hidden="true" className="absolute -left-4 bottom-1 size-16 rounded-full bg-sky-200/50" />
+      <span aria-hidden="true" className="relative whitespace-pre-line text-center text-4xl leading-relaxed drop-shadow-sm sm:text-5xl">{visual.emoji}</span>
     </div>
   );
 }
@@ -32,9 +44,35 @@ function SentenceSortGame({ question, disabled, onSubmit }: { question: GrammarS
   return <div><div className="min-h-28 rounded-[24px] border-2 border-dashed border-violet-200 bg-violet-50/70 p-4" aria-label="句子排列区" onDragOver={(event) => event.preventDefault()} onDrop={(event) => { event.preventDefault(); add(event.dataTransfer.getData("text/plain")); }}><div className="flex min-h-20 flex-wrap items-center justify-center gap-3">{tokens.length ? tokens.map((token, index) => <button type="button" key={`${token}-${index}`} disabled={disabled} onClick={() => setTokens((items) => items.filter((_, itemIndex) => itemIndex !== index))} className="game-button min-h-12 bg-violet-600 px-4 text-lg text-white shadow-sm" aria-label={`移回词卡 ${token}`}>{token}</button>) : <span className="self-center font-bold text-violet-400">把词卡拖到这里，或依次点击词卡</span>}</div></div><div className="mt-5 flex flex-wrap justify-center gap-3">{available.map((token) => <button type="button" key={token} draggable={!disabled} disabled={disabled} onDragStart={(event) => event.dataTransfer.setData("text/plain", token)} onClick={() => add(token)} className="game-button flex min-h-12 items-center gap-1 border-2 border-slate-100 bg-white px-4 text-lg hover:border-violet-300"><GripVertical className="size-4 text-slate-300" />{token}</button>)}</div><div className="mt-6 flex justify-center gap-3"><button type="button" disabled={disabled || tokens.length === 0} onClick={() => setTokens([])} className="game-button flex min-h-12 items-center gap-2 bg-slate-100 px-5 text-sm disabled:opacity-40"><RotateCcw className="size-4" />重排</button><SubmitButton disabled={disabled || tokens.length !== question.tokens.length} onClick={() => onSubmit({ type: "sentence-sort", tokens })} /></div></div>;
 }
 
+function shuffledCopy<T>(items: T[]) {
+  const shuffled = [...items];
+  for (let index = shuffled.length - 1; index > 0; index -= 1) {
+    const swapIndex = Math.floor(Math.random() * (index + 1));
+    [shuffled[index], shuffled[swapIndex]] = [shuffled[swapIndex], shuffled[index]];
+  }
+  return shuffled;
+}
+
+function shuffleMatchRightItems(question: GrammarMatchQuestion) {
+  if (question.rightItems.length < 2) return [...question.rightItems];
+
+  const hasAlignedAnswer = (items: GrammarMatchQuestion["rightItems"]) => question.leftItems.some((left, index) => question.correctPairs[left.id] === items[index]?.id);
+  for (let attempt = 0; attempt < 16; attempt += 1) {
+    const shuffled = shuffledCopy(question.rightItems);
+    if (!hasAlignedAnswer(shuffled)) return shuffled;
+  }
+
+  const rightById = new Map(question.rightItems.map((item) => [item.id, item]));
+  const answerOrder = question.leftItems.map((left) => rightById.get(question.correctPairs[left.id])).filter((item): item is GrammarMatchQuestion["rightItems"][number] => Boolean(item));
+  if (answerOrder.length !== question.rightItems.length || new Set(answerOrder.map((item) => item.id)).size !== answerOrder.length) return shuffledCopy(question.rightItems);
+  const offset = 1 + Math.floor(Math.random() * (answerOrder.length - 1));
+  return answerOrder.map((_, index) => answerOrder[(index + offset) % answerOrder.length]);
+}
+
 function PairMatchGame({ question, disabled, onSubmit }: { question: GrammarMatchQuestion; disabled?: boolean; onSubmit: (response: GrammarResponse) => void }) {
   const [selectedLeft, setSelectedLeft] = useState<string>();
   const [pairs, setPairs] = useState<Record<string, string>>({});
+  const [rightItems] = useState(() => shuffleMatchRightItems(question));
   function connect(rightId: string) {
     if (!selectedLeft || disabled) return;
     setPairs((current) => {
@@ -43,7 +81,7 @@ function PairMatchGame({ question, disabled, onSubmit }: { question: GrammarMatc
     });
     setSelectedLeft(undefined);
   }
-  return <div><p className="mb-4 text-center font-bold text-slate-500">先点左边，再点右边完成配对</p><div className="grid grid-cols-2 gap-3"><div className="space-y-3">{question.leftItems.map((item) => <button type="button" key={item.id} disabled={disabled} aria-pressed={selectedLeft === item.id} onClick={() => setSelectedLeft(item.id)} className={`game-button w-full border-2 px-3 text-sm sm:text-base ${selectedLeft === item.id ? "border-violet-500 bg-violet-100" : pairs[item.id] ? "border-emerald-200 bg-emerald-50" : "border-slate-100 bg-white"}`}><span className="block">{item.label}</span>{pairs[item.id] && <span className="mt-1 block text-xs font-bold text-emerald-700">已连接</span>}</button>)}</div><div className="space-y-3">{question.rightItems.map((item) => { const linked = Object.values(pairs).includes(item.id); return <button type="button" key={item.id} disabled={disabled || !selectedLeft} onClick={() => connect(item.id)} className={`game-button w-full border-2 px-3 text-sm sm:text-base ${linked ? "border-emerald-200 bg-emerald-50" : selectedLeft ? "border-violet-200 bg-white hover:border-violet-400" : "border-slate-100 bg-white"}`}>{item.label}</button>; })}</div></div><div className="mt-6 flex justify-center gap-3"><button type="button" disabled={disabled || Object.keys(pairs).length === 0} onClick={() => { setPairs({}); setSelectedLeft(undefined); }} className="game-button flex min-h-12 items-center gap-2 bg-slate-100 px-5 text-sm disabled:opacity-40"><RotateCcw className="size-4" />重配</button><SubmitButton disabled={disabled || Object.keys(pairs).length !== question.leftItems.length} onClick={() => onSubmit({ type: "pair-match", pairs })} /></div></div>;
+  return <div><p className="mb-4 text-center font-bold text-slate-500">先点左边，再点右边完成配对</p><div className="grid grid-cols-2 gap-3"><div role="group" aria-label="左侧词卡" className="space-y-3">{question.leftItems.map((item) => <button type="button" key={item.id} disabled={disabled} aria-pressed={selectedLeft === item.id} onClick={() => setSelectedLeft(item.id)} className={`game-button w-full border-2 px-3 text-sm sm:text-base ${selectedLeft === item.id ? "border-violet-500 bg-violet-100" : pairs[item.id] ? "border-emerald-200 bg-emerald-50" : "border-slate-100 bg-white"}`}><span className="block">{item.label}</span>{pairs[item.id] && <span className="mt-1 block text-xs font-bold text-emerald-700">已连接</span>}</button>)}</div><div role="group" aria-label="右侧词卡" className="space-y-3">{rightItems.map((item) => { const linked = Object.values(pairs).includes(item.id); return <button type="button" key={item.id} disabled={disabled || !selectedLeft} onClick={() => connect(item.id)} className={`game-button w-full border-2 px-3 text-sm sm:text-base ${linked ? "border-emerald-200 bg-emerald-50" : selectedLeft ? "border-violet-200 bg-white hover:border-violet-400" : "border-slate-100 bg-white"}`}>{item.label}</button>; })}</div></div><div className="mt-6 flex justify-center gap-3"><button type="button" disabled={disabled || Object.keys(pairs).length === 0} onClick={() => { setPairs({}); setSelectedLeft(undefined); }} className="game-button flex min-h-12 items-center gap-2 bg-slate-100 px-5 text-sm disabled:opacity-40"><RotateCcw className="size-4" />重配</button><SubmitButton disabled={disabled || Object.keys(pairs).length !== question.leftItems.length} onClick={() => onSubmit({ type: "pair-match", pairs })} /></div></div>;
 }
 
 function CategorySortGame({ question, disabled, onSubmit }: { question: GrammarCategoryQuestion; disabled?: boolean; onSubmit: (response: GrammarResponse) => void }) {

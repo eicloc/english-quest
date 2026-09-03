@@ -4,6 +4,7 @@ import type {
   GrammarDifficulty,
   GrammarMatchQuestion,
   GrammarQuestion,
+  GrammarQuestionVisual,
   GrammarSkill,
   GrammarSortQuestion,
 } from "@/features/grammar/types";
@@ -242,7 +243,79 @@ const mixedQuestions: GrammarQuestion[] = [
   categorize({ stageId: "mixed", id: "mixed-category-correct", skill: "thirdPersonVerbs", ruleGroup: "review", difficulty: 3, categoryLabels: ["句子正确", "需要改正"], itemLabels: ["I am happy.", "She has a cat.", "They play games.", "He are tall.", "We has books.", "Tom play football."], answers: [0, 0, 0, 1, 1, 1], promptZh: "判断哪些句子语法正确。", hintZh: "逐句检查主语和动词是否匹配。", explanationZh: "He is、We have、Tom plays 才是正确的主谓搭配。" }),
 ];
 
-export const grammarQuestions: GrammarQuestion[] = [
+const grammarQuestionVisuals: Record<string, GrammarQuestionVisual> = {
+  "pronoun-he": { emoji: "👦 🎂", altZh: "七岁男孩 Tom" },
+  "pronoun-she": { emoji: "👧 🎂", altZh: "六岁女孩 Amy" },
+  "pronoun-it": { emoji: "🐈", altZh: "一只白色的猫" },
+  "pronoun-we": { emoji: "👧 🤝 🧒", altZh: "Mia 和说话者一起玩耍" },
+  "pronoun-they": { emoji: "👦 ⚽ 👦", altZh: "Ben 和 Leo 一起踢足球" },
+  "pronoun-dogs": { emoji: "🐶 🐶", altZh: "两只棕色的小狗" },
+
+  "be-i-am": { emoji: "🙂 ✨", altZh: "一个开心的小朋友" },
+  "be-he-is": { emoji: "👦 👦", altZh: "两个兄弟" },
+  "be-she-is": { emoji: "👩‍🏫", altZh: "一位女老师" },
+  "be-it-is": { emoji: "🪁", altZh: "一只红色风筝" },
+  "be-they-are": { emoji: "🧒 🏫 🧒", altZh: "小朋友们在学校" },
+  "be-sort-cat": { emoji: "🐱", altZh: "一只小猫" },
+
+  "plural-books": { emoji: "📘 📗", altZh: "两本书" },
+  "plural-buses": { emoji: "🚌 🚌 🚌", altZh: "三辆公交车" },
+  "plural-babies": { emoji: "👶 👶", altZh: "两个正在睡觉的宝宝" },
+  "plural-mice": { emoji: "🐭 🐭 🐭", altZh: "三只老鼠" },
+  "plural-sheep": { emoji: "🐑 🐑 🐑 🐑 🐑", altZh: "农场里的五只羊" },
+  "plural-sort-apples": { emoji: "🍎 🍎", altZh: "两个苹果" },
+
+  "demo-this": { emoji: "✋ ✏️", altZh: "手边的一支铅笔" },
+  "demo-that": { emoji: "👀 ··· 🎒", altZh: "远处的一个书包" },
+  "demo-these": { emoji: "✋ 📘 📗", altZh: "手边的几本书" },
+  "demo-those": { emoji: "👀 ··· 🐦 🐦", altZh: "天空远处的几只鸟" },
+  "demo-that-cat": { emoji: "👀 ··· 🐈", altZh: "远处的一只猫" },
+  "demo-those-trees": { emoji: "👀 ··· 🌲 🌲", altZh: "远处的几棵大树" },
+
+  "there-is-cat": { emoji: "🪑\n🐱", altZh: "椅子下面有一只猫" },
+  "there-are-books": { emoji: "📘 📗 📙\n━━━━", altZh: "桌上有三本书" },
+  "there-is-water": { emoji: "🥛 💧", altZh: "杯子里有一些水" },
+  "there-not-dog": { emoji: "🏠 🚫 🐶", altZh: "房间里没有狗" },
+  "there-question-many": { emoji: "👜 🍎 🍎 ❓", altZh: "询问包里有没有苹果" },
+  "there-sort-birds": { emoji: "🌤️ 🐦 🐦 🐦", altZh: "外面有三只鸟" },
+
+  "have-i": { emoji: "🧒 🎒", altZh: "小朋友和一个蓝色书包" },
+  "have-you": { emoji: "🧒 📘", altZh: "小朋友和一本新书" },
+  "has-he": { emoji: "👦 🐶", altZh: "男孩和一只小狗" },
+  "has-she": { emoji: "👧 ✏️ ✏️", altZh: "女孩和两支铅笔" },
+  "has-dog": { emoji: "🐕 〰️", altZh: "一只有长尾巴的狗" },
+  "have-they": { emoji: "🧒 🪁 🪁 🪁 🧒", altZh: "小朋友们和三只风筝" },
+
+  "verb-i-play": { emoji: "🧒 ⚽", altZh: "小朋友放学后踢足球" },
+  "verb-she-watches": { emoji: "👧 📺", altZh: "女孩星期日看电视" },
+  "verb-tom-studies": { emoji: "👦 📖", altZh: "Tom 每天学习英语" },
+  "verb-dogs-run": { emoji: "🐕 💨 🐕", altZh: "几只狗跑得很快" },
+  "verb-bird-flies": { emoji: "☁️ 🐦", altZh: "一只鸟在天空中飞" },
+  "verb-amy-goes": { emoji: "👧 🚌 🏫", altZh: "Amy 坐公交车去学校" },
+
+  "negative-i-am-not": { emoji: "🧒 💪", altZh: "一个精神饱满的小朋友" },
+  "negative-he-isnt": { emoji: "🏠 🚫 👦", altZh: "男孩不在家" },
+  "negative-they-arent": { emoji: "🧒 🍽️ 🧒", altZh: "已经吃饱的小朋友们" },
+  "negative-i-dont": { emoji: "🧒 🙅 🥛", altZh: "小朋友不喜欢牛奶" },
+  "negative-she-doesnt": { emoji: "👧 🙅 🍌", altZh: "女孩不喜欢香蕉" },
+  "negative-cats-dont": { emoji: "📍 🚫 😴\n🐈 🐈", altZh: "几只猫不在这里睡觉" },
+
+  "question-am-i": { emoji: "🧒 🕗 ❓", altZh: "小朋友询问自己是否迟到" },
+  "question-is-he": { emoji: "👦 👦 ❓", altZh: "询问一个男孩是不是兄弟" },
+  "question-are-they": { emoji: "🧒 🏫 🧒 ❓", altZh: "询问小朋友们是否在学校" },
+  "question-do-we": { emoji: "📅 📘 ❓", altZh: "询问今天是否有英语课" },
+  "question-does-she": { emoji: "👧 🍎 ❓", altZh: "询问女孩是否喜欢苹果" },
+  "question-sort-there": { emoji: "🐈 🐈 ❓", altZh: "询问是否有两只猫" },
+
+  "mixed-this-is": { emoji: "✋ ✏️", altZh: "手边的一支新铅笔" },
+  "mixed-these-are": { emoji: "👟 👟", altZh: "近处的一双鞋" },
+  "mixed-there-are": { emoji: "🌳 🧒 🧒 🧒 🧒 🧒", altZh: "公园里的五个孩子" },
+  "mixed-she-has": { emoji: "👧 🪁", altZh: "女孩和一只黄色风筝" },
+  "mixed-he-plays": { emoji: "👦 🏀", altZh: "男孩每天打篮球" },
+  "mixed-does-she": { emoji: "👧 🐾 ❓", altZh: "询问女孩是否养了宠物" },
+};
+
+const grammarQuestionPool: GrammarQuestion[] = [
   ...pronounQuestions,
   ...beQuestions,
   ...pluralQuestions,
@@ -254,6 +327,11 @@ export const grammarQuestions: GrammarQuestion[] = [
   ...questionQuestions,
   ...mixedQuestions,
 ];
+
+export const grammarQuestions: GrammarQuestion[] = grammarQuestionPool.map((question) => {
+  const visual = grammarQuestionVisuals[question.id];
+  return visual ? { ...question, visual } : question;
+});
 
 export const grammarQuestionById: Record<string, GrammarQuestion> = Object.fromEntries(grammarQuestions.map((question) => [question.id, question]));
 
