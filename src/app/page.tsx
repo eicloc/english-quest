@@ -1,5 +1,5 @@
-import { WelcomeScreen } from "@/components/home/WelcomeScreen";
+import { AdventureHub } from "@/components/home/AdventureHub";
 
 export default function Home() {
-  return <WelcomeScreen />;
+  return <AdventureHub />;
 }
