@@ -1,0 +1,1886 @@
+[
+  {
+    "id": "is-possessives",
+    "family": "Is",
+    "title": "物品归属 · Is this / that",
+    "sourceFile": "一般疑问句.html",
+    "items": [
+      {
+        "sentence": "Is this my bag? (yes)",
+        "word": "yes",
+        "emoji": "🎒"
+      },
+      {
+        "sentence": "Is this his pen? (no)",
+        "word": "no",
+        "emoji": "🖊️"
+      },
+      {
+        "sentence": "Is this her book? (yes)",
+        "word": "yes",
+        "emoji": "📖"
+      },
+      {
+        "sentence": "Is this its tail? (no)",
+        "word": "no",
+        "emoji": "🐱"
+      },
+      {
+        "sentence": "Is this my pencil? (yes)",
+        "word": "yes",
+        "emoji": "✏️"
+      },
+      {
+        "sentence": "Is this his ruler? (no)",
+        "word": "no",
+        "emoji": "📏"
+      },
+      {
+        "sentence": "Is this her apple? (yes)",
+        "word": "yes",
+        "emoji": "🍎"
+      },
+      {
+        "sentence": "Is this its ear? (no)",
+        "word": "no",
+        "emoji": "🐶"
+      },
+      {
+        "sentence": "Is that my chair? (yes)",
+        "word": "yes",
+        "emoji": "🪑"
+      },
+      {
+        "sentence": "Is that his cap? (no)",
+        "word": "no",
+        "emoji": "🧢"
+      },
+      {
+        "sentence": "Is that her flower? (yes)",
+        "word": "yes",
+        "emoji": "🌸"
+      },
+      {
+        "sentence": "Is that its paw? (no)",
+        "word": "no",
+        "emoji": "🐰"
+      },
+      {
+        "sentence": "Is that my cup? (yes)",
+        "word": "yes",
+        "emoji": "🥤"
+      },
+      {
+        "sentence": "Is that his watch? (no)",
+        "word": "no",
+        "emoji": "⌚"
+      },
+      {
+        "sentence": "Is that her bow? (yes)",
+        "word": "yes",
+        "emoji": "🎀"
+      },
+      {
+        "sentence": "Is that its eye? (no)",
+        "word": "no",
+        "emoji": "🐼"
+      },
+      {
+        "sentence": "Is this my brush? (yes)",
+        "word": "yes",
+        "emoji": "🖌️"
+      },
+      {
+        "sentence": "Is that her cake? (no)",
+        "word": "no",
+        "emoji": "🍰"
+      },
+      {
+        "sentence": "Is this his light? (yes)",
+        "word": "yes",
+        "emoji": "🔦"
+      },
+      {
+        "sentence": "Is that its nose? (no)",
+        "word": "no",
+        "emoji": "🦊"
+      }
+    ]
+  },
+  {
+    "id": "is-things",
+    "family": "Is",
+    "title": "Is this / that / it",
+    "sourceFile": "is的一般疑问句this，that.html",
+    "items": [
+      {
+        "sentence": "Is this a bag? (yes)",
+        "word": "yes",
+        "emoji": "🎒"
+      },
+      {
+        "sentence": "Is this a pen? (no)",
+        "word": "no",
+        "emoji": "🖊️"
+      },
+      {
+        "sentence": "Is that a chair? (yes)",
+        "word": "yes",
+        "emoji": "🪑"
+      },
+      {
+        "sentence": "Is that a cap? (no)",
+        "word": "no",
+        "emoji": "🧢"
+      },
+      {
+        "sentence": "Is it a cat? (yes)",
+        "word": "yes",
+        "emoji": "🐱"
+      },
+      {
+        "sentence": "Is it a dog? (no)",
+        "word": "no",
+        "emoji": "🐶"
+      },
+      {
+        "sentence": "Is this a pencil? (yes)",
+        "word": "yes",
+        "emoji": "✏️"
+      },
+      {
+        "sentence": "Is this a ruler? (no)",
+        "word": "no",
+        "emoji": "📏"
+      },
+      {
+        "sentence": "Is that a flower? (yes)",
+        "word": "yes",
+        "emoji": "🌸"
+      },
+      {
+        "sentence": "Is that a cake? (no)",
+        "word": "no",
+        "emoji": "🍰"
+      },
+      {
+        "sentence": "Is it a panda? (yes)",
+        "word": "yes",
+        "emoji": "🐼"
+      },
+      {
+        "sentence": "Is it a rabbit? (no)",
+        "word": "no",
+        "emoji": "🐰"
+      },
+      {
+        "sentence": "Is this an apple? (yes)",
+        "word": "yes",
+        "emoji": "🍎"
+      },
+      {
+        "sentence": "Is this a book? (no)",
+        "word": "no",
+        "emoji": "📖"
+      },
+      {
+        "sentence": "Is that a cup? (yes)",
+        "word": "yes",
+        "emoji": "🥤"
+      },
+      {
+        "sentence": "Is that a watch? (no)",
+        "word": "no",
+        "emoji": "⌚"
+      },
+      {
+        "sentence": "Is it a bird? (yes)",
+        "word": "yes",
+        "emoji": "🐦"
+      },
+      {
+        "sentence": "Is it a fox? (no)",
+        "word": "no",
+        "emoji": "🦊"
+      },
+      {
+        "sentence": "Is this a lamp? (yes)",
+        "word": "yes",
+        "emoji": "🔦"
+      },
+      {
+        "sentence": "Is that a duck? (no)",
+        "word": "no",
+        "emoji": "🦆"
+      }
+    ]
+  },
+  {
+    "id": "is-things-answers",
+    "family": "Is",
+    "title": "Is this / that / it · 问答",
+    "sourceFile": "is的一般疑问句this，that带答句.html",
+    "items": [
+      {
+        "q": "Is this a bag?",
+        "a": "Yes, it is.",
+        "emoji": "🎒"
+      },
+      {
+        "q": "Is this a pen?",
+        "a": "No, it isn't.",
+        "emoji": "🖊️"
+      },
+      {
+        "q": "Is that a chair?",
+        "a": "Yes, it is.",
+        "emoji": "🪑"
+      },
+      {
+        "q": "Is that a cap?",
+        "a": "No, it isn't.",
+        "emoji": "🧢"
+      },
+      {
+        "q": "Is it a cat?",
+        "a": "Yes, it is.",
+        "emoji": "🐱"
+      },
+      {
+        "q": "Is it a dog?",
+        "a": "No, it isn't.",
+        "emoji": "🐶"
+      },
+      {
+        "q": "Is this a pencil?",
+        "a": "Yes, it is.",
+        "emoji": "✏️"
+      },
+      {
+        "q": "Is this a ruler?",
+        "a": "No, it isn't.",
+        "emoji": "📏"
+      },
+      {
+        "q": "Is that a flower?",
+        "a": "Yes, it is.",
+        "emoji": "🌸"
+      },
+      {
+        "q": "Is that a cake?",
+        "a": "No, it isn't.",
+        "emoji": "🍰"
+      },
+      {
+        "q": "Is it a panda?",
+        "a": "Yes, it is.",
+        "emoji": "🐼"
+      },
+      {
+        "q": "Is it a rabbit?",
+        "a": "No, it isn't.",
+        "emoji": "🐰"
+      },
+      {
+        "q": "Is this an apple?",
+        "a": "Yes, it is.",
+        "emoji": "🍎"
+      },
+      {
+        "q": "Is this a book?",
+        "a": "No, it isn't.",
+        "emoji": "📖"
+      },
+      {
+        "q": "Is that a cup?",
+        "a": "Yes, it is.",
+        "emoji": "🥤"
+      },
+      {
+        "q": "Is that a watch?",
+        "a": "No, it isn't.",
+        "emoji": "⌚"
+      },
+      {
+        "q": "Is it a bird?",
+        "a": "Yes, it is.",
+        "emoji": "🐦"
+      },
+      {
+        "q": "Is it a fox?",
+        "a": "No, it isn't.",
+        "emoji": "🦊"
+      },
+      {
+        "q": "Is this a lamp?",
+        "a": "Yes, it is.",
+        "emoji": "🔦"
+      },
+      {
+        "q": "Is that a duck?",
+        "a": "No, it isn't.",
+        "emoji": "🦆"
+      }
+    ]
+  },
+  {
+    "id": "is-people",
+    "family": "Is",
+    "title": "Is he / she",
+    "sourceFile": "is的一般疑问句he，she.html",
+    "items": [
+      {
+        "sentence": "Is he a boy? (yes)",
+        "word": "yes",
+        "emoji": "👦"
+      },
+      {
+        "sentence": "Is he a teacher? (no)",
+        "word": "no",
+        "emoji": "👨‍🏫"
+      },
+      {
+        "sentence": "Is he your friend? (yes)",
+        "word": "yes",
+        "emoji": "🤴"
+      },
+      {
+        "sentence": "Is he a farmer? (no)",
+        "word": "no",
+        "emoji": "👨🌾"
+      },
+      {
+        "sentence": "Is he a doctor? (yes)",
+        "word": "yes",
+        "emoji": "👨‍⚕️"
+      },
+      {
+        "sentence": "Is he tall? (no)",
+        "word": "no",
+        "emoji": "🧍"
+      },
+      {
+        "sentence": "Is she a girl? (yes)",
+        "word": "yes",
+        "emoji": "👧"
+      },
+      {
+        "sentence": "Is she your friend? (no)",
+        "word": "no",
+        "emoji": "👸"
+      },
+      {
+        "sentence": "Is she a nurse? (yes)",
+        "word": "yes",
+        "emoji": "👩‍⚕️"
+      },
+      {
+        "sentence": "Is she a student? (no)",
+        "word": "no",
+        "emoji": "👩‍🎓"
+      },
+      {
+        "sentence": "Is she short? (yes)",
+        "word": "yes",
+        "emoji": "🧍‍♀️"
+      },
+      {
+        "sentence": "Is she a driver? (no)",
+        "word": "no",
+        "emoji": "👩‍🚗"
+      },
+      {
+        "sentence": "Is he Tom? (yes)",
+        "word": "yes",
+        "emoji": "👦"
+      },
+      {
+        "sentence": "Is he Li Ming? (no)",
+        "word": "no",
+        "emoji": "🧒"
+      },
+      {
+        "sentence": "Is she Amy? (yes)",
+        "word": "yes",
+        "emoji": "👧"
+      },
+      {
+        "sentence": "Is she Jenny? (no)",
+        "word": "no",
+        "emoji": "👩"
+      },
+      {
+        "sentence": "Is he happy? (yes)",
+        "word": "yes",
+        "emoji": "😊"
+      },
+      {
+        "sentence": "Is he sad? (no)",
+        "word": "no",
+        "emoji": "😔"
+      },
+      {
+        "sentence": "Is she happy? (yes)",
+        "word": "yes",
+        "emoji": "😄"
+      },
+      {
+        "sentence": "Is she sad? (no)",
+        "word": "no",
+        "emoji": "🙁"
+      }
+    ]
+  },
+  {
+    "id": "is-people-answers",
+    "family": "Is",
+    "title": "Is he / she · 问答",
+    "sourceFile": "is的一般疑问句he，she带答句.html",
+    "items": [
+      {
+        "q": "Is he a boy?",
+        "a": "Yes, he is.",
+        "emoji": "👦"
+      },
+      {
+        "q": "Is he a teacher?",
+        "a": "No, he isn't.",
+        "emoji": "👨‍🏫"
+      },
+      {
+        "q": "Is he your friend?",
+        "a": "Yes, he is.",
+        "emoji": "🤴"
+      },
+      {
+        "q": "Is he a farmer?",
+        "a": "No, he isn't.",
+        "emoji": "👨🌾"
+      },
+      {
+        "q": "Is he a doctor?",
+        "a": "Yes, he is.",
+        "emoji": "👨‍⚕️"
+      },
+      {
+        "q": "Is he tall?",
+        "a": "No, he isn't.",
+        "emoji": "🧍"
+      },
+      {
+        "q": "Is she a girl?",
+        "a": "Yes, she is.",
+        "emoji": "👧"
+      },
+      {
+        "q": "Is she your friend?",
+        "a": "No, she isn't.",
+        "emoji": "👸"
+      },
+      {
+        "q": "Is she a nurse?",
+        "a": "Yes, she is.",
+        "emoji": "👩‍⚕️"
+      },
+      {
+        "q": "Is she a student?",
+        "a": "No, she isn't.",
+        "emoji": "👩‍🎓"
+      },
+      {
+        "q": "Is she short?",
+        "a": "Yes, she is.",
+        "emoji": "🧍‍♀️"
+      },
+      {
+        "q": "Is she a driver?",
+        "a": "No, she isn't.",
+        "emoji": "👩‍🚗"
+      },
+      {
+        "q": "Is he Tom?",
+        "a": "Yes, he is.",
+        "emoji": "👦"
+      },
+      {
+        "q": "Is he Li Ming?",
+        "a": "No, he isn't.",
+        "emoji": "🧒"
+      },
+      {
+        "q": "Is she Amy?",
+        "a": "Yes, she is.",
+        "emoji": "👧"
+      },
+      {
+        "q": "Is she Jenny?",
+        "a": "No, she isn't.",
+        "emoji": "👩"
+      },
+      {
+        "q": "Is he happy?",
+        "a": "Yes, he is.",
+        "emoji": "😊"
+      },
+      {
+        "q": "Is he sad?",
+        "a": "No, he isn't.",
+        "emoji": "😔"
+      },
+      {
+        "q": "Is she happy?",
+        "a": "Yes, she is.",
+        "emoji": "😄"
+      },
+      {
+        "q": "Is she sad?",
+        "a": "No, she isn't.",
+        "emoji": "🙁"
+      }
+    ]
+  },
+  {
+    "id": "are-things",
+    "family": "Are",
+    "title": "Are these / those",
+    "sourceFile": "are的一般疑问句these，those.html",
+    "items": [
+      {
+        "sentence": "Are these pens? (yes)",
+        "word": "yes",
+        "emoji": "🖊️🖊️"
+      },
+      {
+        "sentence": "Are these pencils? (no)",
+        "word": "no",
+        "emoji": "✏️✏️"
+      },
+      {
+        "sentence": "Are those cats? (yes)",
+        "word": "yes",
+        "emoji": "🐱🐱"
+      },
+      {
+        "sentence": "Are those dogs? (no)",
+        "word": "no",
+        "emoji": "🐶🐶"
+      },
+      {
+        "sentence": "Are these books? (yes)",
+        "word": "yes",
+        "emoji": "📖📖"
+      },
+      {
+        "sentence": "Are these bags? (no)",
+        "word": "no",
+        "emoji": "🎒🎒"
+      },
+      {
+        "sentence": "Are those birds? (yes)",
+        "word": "yes",
+        "emoji": "🐦🐦"
+      },
+      {
+        "sentence": "Are those ducks? (no)",
+        "word": "no",
+        "emoji": "🦆🦆"
+      },
+      {
+        "sentence": "Are these apples? (yes)",
+        "word": "yes",
+        "emoji": "🍎🍎"
+      },
+      {
+        "sentence": "Are these pears? (no)",
+        "word": "no",
+        "emoji": "🍐🍐"
+      },
+      {
+        "sentence": "Are those pandas? (yes)",
+        "word": "yes",
+        "emoji": "🐼🐼"
+      },
+      {
+        "sentence": "Are those rabbits? (no)",
+        "word": "no",
+        "emoji": "🐰🐰"
+      },
+      {
+        "sentence": "Are these rulers? (yes)",
+        "word": "yes",
+        "emoji": "📏📏"
+      },
+      {
+        "sentence": "Are these caps? (no)",
+        "word": "no",
+        "emoji": "🧢🧢"
+      },
+      {
+        "sentence": "Are those flowers? (yes)",
+        "word": "yes",
+        "emoji": "🌸🌸"
+      },
+      {
+        "sentence": "Are those cakes? (no)",
+        "word": "no",
+        "emoji": "🍰🍰"
+      },
+      {
+        "sentence": "Are these desks? (yes)",
+        "word": "yes",
+        "emoji": "🪑🪑"
+      },
+      {
+        "sentence": "Are these cups? (no)",
+        "word": "no",
+        "emoji": "🥤🥤"
+      },
+      {
+        "sentence": "Are those foxes? (yes)",
+        "word": "yes",
+        "emoji": "🦊🦊"
+      },
+      {
+        "sentence": "Are those cows? (no)",
+        "word": "no",
+        "emoji": "🐄🐄"
+      }
+    ]
+  },
+  {
+    "id": "are-things-answers",
+    "family": "Are",
+    "title": "Are these / those · 问答",
+    "sourceFile": "are的一般疑问句these，those带答句.html",
+    "items": [
+      {
+        "q": "Are these pens?",
+        "a": "Yes, they are.",
+        "emoji": "🖊️🖊️"
+      },
+      {
+        "q": "Are these pencils?",
+        "a": "No, they aren't.",
+        "emoji": "✏️✏️"
+      },
+      {
+        "q": "Are those cats?",
+        "a": "Yes, they are.",
+        "emoji": "🐱🐱"
+      },
+      {
+        "q": "Are those dogs?",
+        "a": "No, they aren't.",
+        "emoji": "🐶🐶"
+      },
+      {
+        "q": "Are these books?",
+        "a": "Yes, they are.",
+        "emoji": "📖📖"
+      },
+      {
+        "q": "Are these bags?",
+        "a": "No, they aren't.",
+        "emoji": "🎒🎒"
+      },
+      {
+        "q": "Are those birds?",
+        "a": "Yes, they are.",
+        "emoji": "🐦🐦"
+      },
+      {
+        "q": "Are those ducks?",
+        "a": "No, they aren't.",
+        "emoji": "🦆🦆"
+      },
+      {
+        "q": "Are these apples?",
+        "a": "Yes, they are.",
+        "emoji": "🍎🍎"
+      },
+      {
+        "q": "Are these pears?",
+        "a": "No, they aren't.",
+        "emoji": "🍐🍐"
+      },
+      {
+        "q": "Are those pandas?",
+        "a": "Yes, they are.",
+        "emoji": "🐼🐼"
+      },
+      {
+        "q": "Are those rabbits?",
+        "a": "No, they aren't.",
+        "emoji": "🐰🐰"
+      },
+      {
+        "q": "Are these rulers?",
+        "a": "Yes, they are.",
+        "emoji": "📏📏"
+      },
+      {
+        "q": "Are these caps?",
+        "a": "No, they aren't.",
+        "emoji": "🧢🧢"
+      },
+      {
+        "q": "Are those flowers?",
+        "a": "Yes, they are.",
+        "emoji": "🌸🌸"
+      },
+      {
+        "q": "Are those cakes?",
+        "a": "No, they aren't.",
+        "emoji": "🍰🍰"
+      },
+      {
+        "q": "Are these desks?",
+        "a": "Yes, they are.",
+        "emoji": "🪑🪑"
+      },
+      {
+        "q": "Are these cups?",
+        "a": "No, they aren't.",
+        "emoji": "🥤🥤"
+      },
+      {
+        "q": "Are those foxes?",
+        "a": "Yes, they are.",
+        "emoji": "🦊🦊"
+      },
+      {
+        "q": "Are those cows?",
+        "a": "No, they aren't.",
+        "emoji": "🐄🐄"
+      }
+    ]
+  },
+  {
+    "id": "are-you",
+    "family": "Are",
+    "title": "Are you",
+    "sourceFile": "are的一般疑问句you.html",
+    "items": [
+      {
+        "sentence": "Are you a student? (yes)",
+        "word": "yes",
+        "emoji": "🧒"
+      },
+      {
+        "sentence": "Are you a teacher? (no)",
+        "word": "no",
+        "emoji": "👨‍🏫"
+      },
+      {
+        "sentence": "Are you tall? (yes)",
+        "word": "yes",
+        "emoji": "🧍"
+      },
+      {
+        "sentence": "Are you short? (no)",
+        "word": "no",
+        "emoji": "🧍‍♀️"
+      },
+      {
+        "sentence": "Are you happy? (yes)",
+        "word": "yes",
+        "emoji": "😊"
+      },
+      {
+        "sentence": "Are you sad? (no)",
+        "word": "no",
+        "emoji": "😔"
+      },
+      {
+        "sentence": "Are you a boy? (yes)",
+        "word": "yes",
+        "emoji": "👦"
+      },
+      {
+        "sentence": "Are you a girl? (no)",
+        "word": "no",
+        "emoji": "👧"
+      },
+      {
+        "sentence": "Are you nine? (yes)",
+        "word": "yes",
+        "emoji": "9️⃣"
+      },
+      {
+        "sentence": "Are you ten? (no)",
+        "word": "no",
+        "emoji": "🔟"
+      },
+      {
+        "sentence": "Are you hungry? (yes)",
+        "word": "yes",
+        "emoji": "🍞"
+      },
+      {
+        "sentence": "Are you full? (no)",
+        "word": "no",
+        "emoji": "🥛"
+      },
+      {
+        "sentence": "Are you hot? (yes)",
+        "word": "yes",
+        "emoji": "☀️"
+      },
+      {
+        "sentence": "Are you cold? (no)",
+        "word": "no",
+        "emoji": "❄️"
+      },
+      {
+        "sentence": "Are you my friend? (yes)",
+        "word": "yes",
+        "emoji": "🤝"
+      },
+      {
+        "sentence": "Are you his friend? (no)",
+        "word": "no",
+        "emoji": "👋"
+      },
+      {
+        "sentence": "Are you a farmer? (yes)",
+        "word": "yes",
+        "emoji": "👨‍🌾"
+      },
+      {
+        "sentence": "Are you a driver? (no)",
+        "word": "no",
+        "emoji": "🚗"
+      },
+      {
+        "sentence": "Are you fine? (yes)",
+        "word": "yes",
+        "emoji": "👍"
+      },
+      {
+        "sentence": "Are you OK? (no)",
+        "word": "no",
+        "emoji": "🙅"
+      }
+    ]
+  },
+  {
+    "id": "are-you-answers",
+    "family": "Are",
+    "title": "Are you · 问答",
+    "sourceFile": "are的一般疑问句you带答句.html",
+    "items": [
+      {
+        "q": "Are you a student?",
+        "a": "Yes, I am.",
+        "emoji": "🧒"
+      },
+      {
+        "q": "Are you a teacher?",
+        "a": "No, I'm not.",
+        "emoji": "👨‍🏫"
+      },
+      {
+        "q": "Are you tall?",
+        "a": "Yes, I am.",
+        "emoji": "🧍"
+      },
+      {
+        "q": "Are you short?",
+        "a": "No, I'm not.",
+        "emoji": "🧍‍♀️"
+      },
+      {
+        "q": "Are you happy?",
+        "a": "Yes, I am.",
+        "emoji": "😊"
+      },
+      {
+        "q": "Are you sad?",
+        "a": "No, I'm not.",
+        "emoji": "😔"
+      },
+      {
+        "q": "Are you a boy?",
+        "a": "Yes, I am.",
+        "emoji": "👦"
+      },
+      {
+        "q": "Are you a girl?",
+        "a": "No, I'm not.",
+        "emoji": "👧"
+      },
+      {
+        "q": "Are you nine?",
+        "a": "Yes, I am.",
+        "emoji": "9️⃣"
+      },
+      {
+        "q": "Are you ten?",
+        "a": "No, I'm not.",
+        "emoji": "🔟"
+      },
+      {
+        "q": "Are you hungry?",
+        "a": "Yes, I am.",
+        "emoji": "🍞"
+      },
+      {
+        "q": "Are you full?",
+        "a": "No, I'm not.",
+        "emoji": "🥛"
+      },
+      {
+        "q": "Are you hot?",
+        "a": "Yes, I am.",
+        "emoji": "☀️"
+      },
+      {
+        "q": "Are you cold?",
+        "a": "No, I'm not.",
+        "emoji": "❄️"
+      },
+      {
+        "q": "Are you my friend?",
+        "a": "Yes, I am.",
+        "emoji": "🤝"
+      },
+      {
+        "q": "Are you his friend?",
+        "a": "No, I'm not.",
+        "emoji": "👋"
+      },
+      {
+        "q": "Are you a farmer?",
+        "a": "Yes, I am.",
+        "emoji": "👨‍🌾"
+      },
+      {
+        "q": "Are you a driver?",
+        "a": "No, I'm not.",
+        "emoji": "🚗"
+      },
+      {
+        "q": "Are you fine?",
+        "a": "Yes, I am.",
+        "emoji": "👍"
+      },
+      {
+        "q": "Are you OK?",
+        "a": "No, I'm not.",
+        "emoji": "🙅"
+      }
+    ]
+  },
+  {
+    "id": "can-basic",
+    "family": "Can",
+    "title": "Can · 基础训练",
+    "sourceFile": "can基础训练.html",
+    "items": [
+      {
+        "sentence": "Can you run?",
+        "emoji": "🏃"
+      },
+      {
+        "sentence": "Can you jump?",
+        "emoji": "🦘"
+      },
+      {
+        "sentence": "Can you sing?",
+        "emoji": "🎤"
+      },
+      {
+        "sentence": "Can you draw?",
+        "emoji": "🖌️"
+      },
+      {
+        "sentence": "Can you read?",
+        "emoji": "📖"
+      },
+      {
+        "sentence": "Can you write?",
+        "emoji": "✍️"
+      },
+      {
+        "sentence": "Can you swim?",
+        "emoji": "🏊"
+      },
+      {
+        "sentence": "Can you dance?",
+        "emoji": "💃"
+      },
+      {
+        "sentence": "Can he run?",
+        "emoji": "🏃"
+      },
+      {
+        "sentence": "Can he jump?",
+        "emoji": "🦘"
+      },
+      {
+        "sentence": "Can he sing?",
+        "emoji": "🎤"
+      },
+      {
+        "sentence": "Can he draw?",
+        "emoji": "🖌️"
+      },
+      {
+        "sentence": "Can she read?",
+        "emoji": "📖"
+      },
+      {
+        "sentence": "Can she write?",
+        "emoji": "✍️"
+      },
+      {
+        "sentence": "Can she swim?",
+        "emoji": "🏊"
+      },
+      {
+        "sentence": "Can she dance?",
+        "emoji": "💃"
+      },
+      {
+        "sentence": "Can you fly?",
+        "emoji": "🪁"
+      },
+      {
+        "sentence": "Can you ride?",
+        "emoji": "🚲"
+      },
+      {
+        "sentence": "Can he play?",
+        "emoji": "⚽"
+      },
+      {
+        "sentence": "Can she play?",
+        "emoji": "🏀"
+      }
+    ]
+  },
+  {
+    "id": "can-extended",
+    "family": "Can",
+    "title": "Can · 拓展训练",
+    "sourceFile": "can拓展句型训练.html",
+    "items": [
+      {
+        "sentence": "Can you run?",
+        "emoji": "🏃"
+      },
+      {
+        "sentence": "Can you jump?",
+        "emoji": "🦘"
+      },
+      {
+        "sentence": "Can he swim?",
+        "emoji": "🏊"
+      },
+      {
+        "sentence": "Can she draw?",
+        "emoji": "🖌️"
+      },
+      {
+        "sentence": "Can you sing?",
+        "emoji": "🎤"
+      },
+      {
+        "sentence": "Can you dance?",
+        "emoji": "💃"
+      },
+      {
+        "sentence": "Can he play football?",
+        "emoji": "⚽"
+      },
+      {
+        "sentence": "Can she play basketball?",
+        "emoji": "🏀"
+      },
+      {
+        "sentence": "Can you read English?",
+        "emoji": "📖"
+      },
+      {
+        "sentence": "Can you write?",
+        "emoji": "✍️"
+      },
+      {
+        "sentence": "Can he fly a kite?",
+        "emoji": "🪁"
+      },
+      {
+        "sentence": "Can she ride a bike?",
+        "emoji": "🚲"
+      },
+      {
+        "sentence": "Can you see a bird?",
+        "emoji": "🐦"
+      },
+      {
+        "sentence": "Can you hear a dog?",
+        "emoji": "🐶"
+      },
+      {
+        "sentence": "Can he climb trees?",
+        "emoji": "🌳"
+      },
+      {
+        "sentence": "Can she cook?",
+        "emoji": "🍳"
+      },
+      {
+        "sentence": "Can you skate?",
+        "emoji": "⛸️"
+      },
+      {
+        "sentence": "Can you swim fast?",
+        "emoji": "🌊"
+      },
+      {
+        "sentence": "Can he speak Chinese?",
+        "emoji": "🗣️"
+      },
+      {
+        "sentence": "Can she jump far?",
+        "emoji": "📏"
+      }
+    ]
+  },
+  {
+    "id": "can-extended-answers",
+    "family": "Can",
+    "title": "Can · 拓展问答",
+    "sourceFile": "can拓展句型带答句.html",
+    "items": [
+      {
+        "q": "Can you run?",
+        "a": "Yes, I can.",
+        "emoji": "🏃"
+      },
+      {
+        "q": "Can you jump?",
+        "a": "No, I can't.",
+        "emoji": "🦘"
+      },
+      {
+        "q": "Can he swim?",
+        "a": "Yes, he can.",
+        "emoji": "🏊"
+      },
+      {
+        "q": "Can she draw?",
+        "a": "No, she can't.",
+        "emoji": "🖌️"
+      },
+      {
+        "q": "Can you sing?",
+        "a": "Yes, I can.",
+        "emoji": "🎤"
+      },
+      {
+        "q": "Can you dance?",
+        "a": "No, I can't.",
+        "emoji": "💃"
+      },
+      {
+        "q": "Can he play football?",
+        "a": "Yes, he can.",
+        "emoji": "⚽"
+      },
+      {
+        "q": "Can she play basketball?",
+        "a": "No, she can't.",
+        "emoji": "🏀"
+      },
+      {
+        "q": "Can you read English?",
+        "a": "Yes, I can.",
+        "emoji": "📖"
+      },
+      {
+        "q": "Can you write?",
+        "a": "No, I can't.",
+        "emoji": "✍️"
+      },
+      {
+        "q": "Can he fly a kite?",
+        "a": "Yes, he can.",
+        "emoji": "🪁"
+      },
+      {
+        "q": "Can she ride a bike?",
+        "a": "No, she can't.",
+        "emoji": "🚲"
+      },
+      {
+        "q": "Can you see a bird?",
+        "a": "Yes, I can.",
+        "emoji": "🐦"
+      },
+      {
+        "q": "Can you hear a dog?",
+        "a": "No, I can't.",
+        "emoji": "🐶"
+      },
+      {
+        "q": "Can he climb trees?",
+        "a": "Yes, he can.",
+        "emoji": "🌳"
+      },
+      {
+        "q": "Can she cook?",
+        "a": "No, she can't.",
+        "emoji": "🍳"
+      },
+      {
+        "q": "Can you skate?",
+        "a": "Yes, I can.",
+        "emoji": "⛸️"
+      },
+      {
+        "q": "Can you swim fast?",
+        "a": "No, I can't.",
+        "emoji": "🌊"
+      },
+      {
+        "q": "Can he speak Chinese?",
+        "a": "Yes, he can.",
+        "emoji": "🗣️"
+      },
+      {
+        "q": "Can she jump far?",
+        "a": "No, she can't.",
+        "emoji": "📏"
+      }
+    ]
+  },
+  {
+    "id": "do-basic",
+    "family": "Do",
+    "title": "Do you · Have / Like",
+    "sourceFile": "do的一般疑问句 have， like.html",
+    "items": [
+      {
+        "sentence": "Do you like apples?",
+        "word": "yes",
+        "emoji": "🍎"
+      },
+      {
+        "sentence": "Do you like bananas?",
+        "word": "no",
+        "emoji": "🍌"
+      },
+      {
+        "sentence": "Do you like cats?",
+        "word": "yes",
+        "emoji": "🐱"
+      },
+      {
+        "sentence": "Do you like dogs?",
+        "word": "no",
+        "emoji": "🐶"
+      },
+      {
+        "sentence": "Do you like books?",
+        "word": "yes",
+        "emoji": "📖"
+      },
+      {
+        "sentence": "Do you like pens?",
+        "word": "no",
+        "emoji": "🖊️"
+      },
+      {
+        "sentence": "Do you like cakes?",
+        "word": "yes",
+        "emoji": "🍰"
+      },
+      {
+        "sentence": "Do you like milk?",
+        "word": "no",
+        "emoji": "🥛"
+      },
+      {
+        "sentence": "Do you like red?",
+        "word": "yes",
+        "emoji": "🔴"
+      },
+      {
+        "sentence": "Do you like blue?",
+        "word": "no",
+        "emoji": "🔵"
+      },
+      {
+        "sentence": "Do you have a bag?",
+        "word": "yes",
+        "emoji": "🎒"
+      },
+      {
+        "sentence": "Do you have a cap?",
+        "word": "no",
+        "emoji": "🧢"
+      },
+      {
+        "sentence": "Do you have a ruler?",
+        "word": "yes",
+        "emoji": "📏"
+      },
+      {
+        "sentence": "Do you have a pencil?",
+        "word": "no",
+        "emoji": "✏️"
+      },
+      {
+        "sentence": "Do you run fast?",
+        "word": "yes",
+        "emoji": "🏃"
+      },
+      {
+        "sentence": "Do you jump high?",
+        "word": "no",
+        "emoji": "🦘"
+      },
+      {
+        "sentence": "Do you go to school?",
+        "word": "yes",
+        "emoji": "🏫"
+      },
+      {
+        "sentence": "Do you get up early?",
+        "word": "no",
+        "emoji": "⏰"
+      },
+      {
+        "sentence": "Do you play football?",
+        "word": "yes",
+        "emoji": "⚽"
+      },
+      {
+        "sentence": "Do you play basketball?",
+        "word": "no",
+        "emoji": "🏀"
+      }
+    ]
+  },
+  {
+    "id": "do-basic-answers",
+    "family": "Do",
+    "title": "Do you · Have / Like 问答",
+    "sourceFile": "do的一般疑问句 have， like带答句.html",
+    "items": [
+      {
+        "q": "Do you like apples?",
+        "a": "Yes, I do.",
+        "emoji": "🍎"
+      },
+      {
+        "q": "Do you like bananas?",
+        "a": "No, I don't.",
+        "emoji": "🍌"
+      },
+      {
+        "q": "Do you like cats?",
+        "a": "Yes, I do.",
+        "emoji": "🐱"
+      },
+      {
+        "q": "Do you like dogs?",
+        "a": "No, I don't.",
+        "emoji": "🐶"
+      },
+      {
+        "q": "Do you like books?",
+        "a": "Yes, I do.",
+        "emoji": "📖"
+      },
+      {
+        "q": "Do you like pens?",
+        "a": "No, I don't.",
+        "emoji": "🖊️"
+      },
+      {
+        "q": "Do you like cakes?",
+        "a": "Yes, I do.",
+        "emoji": "🍰"
+      },
+      {
+        "q": "Do you like milk?",
+        "a": "No, I don't.",
+        "emoji": "🥛"
+      },
+      {
+        "q": "Do you like red?",
+        "a": "Yes, I do.",
+        "emoji": "🔴"
+      },
+      {
+        "q": "Do you like blue?",
+        "a": "No, I don't.",
+        "emoji": "🔵"
+      },
+      {
+        "q": "Do you have a bag?",
+        "a": "Yes, I do.",
+        "emoji": "🎒"
+      },
+      {
+        "q": "Do you have a cap?",
+        "a": "No, I don't.",
+        "emoji": "🧢"
+      },
+      {
+        "q": "Do you have a ruler?",
+        "a": "Yes, I do.",
+        "emoji": "📏"
+      },
+      {
+        "q": "Do you have a pencil?",
+        "a": "No, I don't.",
+        "emoji": "✏️"
+      },
+      {
+        "q": "Do you run fast?",
+        "a": "Yes, I do.",
+        "emoji": "🏃"
+      },
+      {
+        "q": "Do you jump high?",
+        "a": "No, I don't.",
+        "emoji": "🦘"
+      },
+      {
+        "q": "Do you go to school?",
+        "a": "Yes, I do.",
+        "emoji": "🏫"
+      },
+      {
+        "q": "Do you get up early?",
+        "a": "No, I don't.",
+        "emoji": "⏰"
+      },
+      {
+        "q": "Do you play football?",
+        "a": "Yes, I do.",
+        "emoji": "⚽"
+      },
+      {
+        "q": "Do you play basketball?",
+        "a": "No, I don't.",
+        "emoji": "🏀"
+      }
+    ]
+  },
+  {
+    "id": "do-extended-answers",
+    "family": "Do",
+    "title": "Do you · 拓展问答",
+    "sourceFile": "do的一般疑问句拓展版带答句.html",
+    "items": [
+      {
+        "q": "Do you like apples?",
+        "a": "Yes, I do.",
+        "emoji": "🍎"
+      },
+      {
+        "q": "Do you like bananas?",
+        "a": "No, I don't.",
+        "emoji": "🍌"
+      },
+      {
+        "q": "Do you love cats?",
+        "a": "Yes, I do.",
+        "emoji": "🐱"
+      },
+      {
+        "q": "Do you hate dogs?",
+        "a": "No, I don't.",
+        "emoji": "🐶"
+      },
+      {
+        "q": "Do you read books?",
+        "a": "Yes, I do.",
+        "emoji": "📖"
+      },
+      {
+        "q": "Do you draw pictures?",
+        "a": "No, I don't.",
+        "emoji": "🖌️"
+      },
+      {
+        "q": "Do you eat cakes?",
+        "a": "Yes, I do.",
+        "emoji": "🍰"
+      },
+      {
+        "q": "Do you drink milk?",
+        "a": "No, I don't.",
+        "emoji": "🥛"
+      },
+      {
+        "q": "Do you run fast?",
+        "a": "Yes, I do.",
+        "emoji": "🏃"
+      },
+      {
+        "q": "Do you jump high?",
+        "a": "No, I don't.",
+        "emoji": "🦘"
+      },
+      {
+        "q": "Do you walk to school?",
+        "a": "Yes, I do.",
+        "emoji": "🏫"
+      },
+      {
+        "q": "Do you sleep late?",
+        "a": "No, I don't.",
+        "emoji": "🛏️"
+      },
+      {
+        "q": "Do you play football?",
+        "a": "Yes, I do.",
+        "emoji": "⚽"
+      },
+      {
+        "q": "Do you play basketball?",
+        "a": "No, I don't.",
+        "emoji": "🏀"
+      },
+      {
+        "q": "Do you sing songs?",
+        "a": "Yes, I do.",
+        "emoji": "🎤"
+      },
+      {
+        "q": "Do you dance well?",
+        "a": "No, I don't.",
+        "emoji": "💃"
+      },
+      {
+        "q": "Do you have a bag?",
+        "a": "Yes, I do.",
+        "emoji": "🎒"
+      },
+      {
+        "q": "Do you need a pen?",
+        "a": "No, I don't.",
+        "emoji": "🖊️"
+      },
+      {
+        "q": "Do you watch TV?",
+        "a": "Yes, I do.",
+        "emoji": "📺"
+      },
+      {
+        "q": "Do you wash hands?",
+        "a": "No, I don't.",
+        "emoji": "🧼"
+      }
+    ]
+  },
+  {
+    "id": "does-basic-answers",
+    "family": "Does",
+    "title": "Does he / she · 基础问答",
+    "sourceFile": "dose基础句型带答句.html",
+    "items": [
+      {
+        "q": "Does he run?",
+        "a": "Yes, he does.",
+        "emoji": "🏃"
+      },
+      {
+        "q": "Does he jump?",
+        "a": "No, he doesn't.",
+        "emoji": "🦘"
+      },
+      {
+        "q": "Does he sing?",
+        "a": "Yes, he does.",
+        "emoji": "🎤"
+      },
+      {
+        "q": "Does he draw?",
+        "a": "No, he doesn't.",
+        "emoji": "🖌️"
+      },
+      {
+        "q": "Does he read?",
+        "a": "Yes, he does.",
+        "emoji": "📖"
+      },
+      {
+        "q": "Does he write?",
+        "a": "No, he doesn't.",
+        "emoji": "✍️"
+      },
+      {
+        "q": "Does she swim?",
+        "a": "Yes, she does.",
+        "emoji": "🏊"
+      },
+      {
+        "q": "Does she dance?",
+        "a": "No, she doesn't.",
+        "emoji": "💃"
+      },
+      {
+        "q": "Does she play?",
+        "a": "Yes, she does.",
+        "emoji": "⚽"
+      },
+      {
+        "q": "Does she ride?",
+        "a": "No, she doesn't.",
+        "emoji": "🚲"
+      },
+      {
+        "q": "Does he like cats?",
+        "a": "Yes, he does.",
+        "emoji": "🐱"
+      },
+      {
+        "q": "Does he like dogs?",
+        "a": "No, he doesn't.",
+        "emoji": "🐶"
+      },
+      {
+        "q": "Does she like apples?",
+        "a": "Yes, she does.",
+        "emoji": "🍎"
+      },
+      {
+        "q": "Does she like bananas?",
+        "a": "No, she doesn't.",
+        "emoji": "🍌"
+      },
+      {
+        "q": "Does he walk?",
+        "a": "Yes, he does.",
+        "emoji": "🚶"
+      },
+      {
+        "q": "Does he watch?",
+        "a": "No, he doesn't.",
+        "emoji": "📺"
+      },
+      {
+        "q": "Does she eat?",
+        "a": "Yes, she does.",
+        "emoji": "🍰"
+      },
+      {
+        "q": "Does she drink?",
+        "a": "No, she doesn't.",
+        "emoji": "🥛"
+      },
+      {
+        "q": "Does he sleep?",
+        "a": "Yes, he does.",
+        "emoji": "🛏️"
+      },
+      {
+        "q": "Does she talk?",
+        "a": "No, she doesn't.",
+        "emoji": "💬"
+      }
+    ]
+  },
+  {
+    "id": "does-extended",
+    "family": "Does",
+    "title": "Does he / she · 拓展训练",
+    "sourceFile": "dose句型训练.html",
+    "items": [
+      {
+        "sentence": "Does he like apples?",
+        "emoji": "🍎"
+      },
+      {
+        "sentence": "Does he like bananas?",
+        "emoji": "🍌"
+      },
+      {
+        "sentence": "Does she like cats?",
+        "emoji": "🐱"
+      },
+      {
+        "sentence": "Does she like dogs?",
+        "emoji": "🐶"
+      },
+      {
+        "sentence": "Does he read books?",
+        "emoji": "📖"
+      },
+      {
+        "sentence": "Does he draw pictures?",
+        "emoji": "🖌️"
+      },
+      {
+        "sentence": "Does she sing songs?",
+        "emoji": "🎤"
+      },
+      {
+        "sentence": "Does she dance well?",
+        "emoji": "💃"
+      },
+      {
+        "sentence": "Does he play football?",
+        "emoji": "⚽"
+      },
+      {
+        "sentence": "Does he play basketball?",
+        "emoji": "🏀"
+      },
+      {
+        "sentence": "Does she have a bag?",
+        "emoji": "🎒"
+      },
+      {
+        "sentence": "Does she have a cap?",
+        "emoji": "🧢"
+      },
+      {
+        "sentence": "Does he run fast?",
+        "emoji": "🏃"
+      },
+      {
+        "sentence": "Does he jump high?",
+        "emoji": "🦘"
+      },
+      {
+        "sentence": "Does she watch TV?",
+        "emoji": "📺"
+      },
+      {
+        "sentence": "Does she wash clothes?",
+        "emoji": "🧺"
+      },
+      {
+        "sentence": "Does he go to school?",
+        "emoji": "🏫"
+      },
+      {
+        "sentence": "Does he get up early?",
+        "emoji": "⏰"
+      },
+      {
+        "sentence": "Does she eat cakes?",
+        "emoji": "🍰"
+      },
+      {
+        "sentence": "Does she drink milk?",
+        "emoji": "🥛"
+      }
+    ]
+  },
+  {
+    "id": "does-extended-answers",
+    "family": "Does",
+    "title": "Does he / she · 拓展问答",
+    "sourceFile": "dose句型训练带答句.html",
+    "items": [
+      {
+        "q": "Does he like apples?",
+        "a": "Yes, he does.",
+        "emoji": "🍎"
+      },
+      {
+        "q": "Does he like bananas?",
+        "a": "No, he doesn't.",
+        "emoji": "🍌"
+      },
+      {
+        "q": "Does she like cats?",
+        "a": "Yes, she does.",
+        "emoji": "🐱"
+      },
+      {
+        "q": "Does she like dogs?",
+        "a": "No, she doesn't.",
+        "emoji": "🐶"
+      },
+      {
+        "q": "Does he read books?",
+        "a": "Yes, he does.",
+        "emoji": "📖"
+      },
+      {
+        "q": "Does he draw pictures?",
+        "a": "No, he doesn't.",
+        "emoji": "🖌️"
+      },
+      {
+        "q": "Does she sing songs?",
+        "a": "Yes, she does.",
+        "emoji": "🎤"
+      },
+      {
+        "q": "Does she dance well?",
+        "a": "No, she doesn't.",
+        "emoji": "💃"
+      },
+      {
+        "q": "Does he play football?",
+        "a": "Yes, he does.",
+        "emoji": "⚽"
+      },
+      {
+        "q": "Does he play basketball?",
+        "a": "No, he doesn't.",
+        "emoji": "🏀"
+      },
+      {
+        "q": "Does she have a bag?",
+        "a": "Yes, she does.",
+        "emoji": "🎒"
+      },
+      {
+        "q": "Does she have a cap?",
+        "a": "No, she doesn't.",
+        "emoji": "🧢"
+      },
+      {
+        "q": "Does he run fast?",
+        "a": "Yes, he does.",
+        "emoji": "🏃"
+      },
+      {
+        "q": "Does he jump high?",
+        "a": "No, he doesn't.",
+        "emoji": "🦘"
+      },
+      {
+        "q": "Does she watch TV?",
+        "a": "Yes, she does.",
+        "emoji": "📺"
+      },
+      {
+        "q": "Does she wash clothes?",
+        "a": "No, she doesn't.",
+        "emoji": "🧺"
+      },
+      {
+        "q": "Does he go to school?",
+        "a": "Yes, he does.",
+        "emoji": "🏫"
+      },
+      {
+        "q": "Does he get up early?",
+        "a": "No, he doesn't.",
+        "emoji": "⏰"
+      },
+      {
+        "q": "Does she eat cakes?",
+        "a": "Yes, she does.",
+        "emoji": "🍰"
+      },
+      {
+        "q": "Does she drink milk?",
+        "a": "No, she doesn't.",
+        "emoji": "🥛"
+      }
+    ]
+  }
+]
