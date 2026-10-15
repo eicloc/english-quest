@@ -16,8 +16,8 @@ export function GreetingQuestion({ question, attempt, studentName, soundEnabled,
   return null;
 }
 
-function OralQuestion({ question, attempt, studentName, soundEnabled, onAction }: {
-  question: GreetingOralQuestion; attempt: GreetingOralAttempt; studentName: string; soundEnabled: boolean;
+export function OralQuestion({ question, attempt, studentName, soundEnabled, onAction }: {
+  question: Omit<GreetingOralQuestion, "id" | "part" | "stage" | "skill">; attempt: GreetingOralAttempt; studentName: string; soundEnabled: boolean;
   onAction: (action: GreetingQuestionAction) => void;
 }) {
   return <div>
@@ -49,8 +49,8 @@ function OralQuestion({ question, attempt, studentName, soundEnabled, onAction }
   </div>;
 }
 
-function SpellingQuestion({ question, attempt, soundEnabled, onAction }: {
-  question: GreetingSpellingQuestion; attempt: GreetingSpellingAttempt; soundEnabled: boolean;
+export function SpellingQuestion({ question, attempt, soundEnabled, onAction }: {
+  question: Omit<GreetingSpellingQuestion, "id" | "part" | "stage" | "skill">; attempt: GreetingSpellingAttempt; soundEnabled: boolean;
   onAction: (action: GreetingQuestionAction) => void;
 }) {
   const tiles = getLetterTiles(question);

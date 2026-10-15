@@ -3,7 +3,7 @@ import type { GreetingAttempt, GreetingQuestionAction, GreetingSession, Greeting
 
 export const emptyGreetingsData = (): GreetingsData => ({ version: 1, sessions: [] });
 
-export function getLetterTiles(question: GreetingSpellingQuestion): LetterTile[] {
+export function getLetterTiles(question: Pick<GreetingSpellingQuestion, "word">): LetterTile[] {
   return [...question.word].map((letter, index) => ({ id: `letter-${index}`, letter }));
 }
 

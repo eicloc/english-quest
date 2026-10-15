@@ -40,12 +40,23 @@ const adventures = [
     href: "/greetings/",
     eyebrow: "Hello, Friends!",
     title: "问候交朋友",
-    description: "学会回应和主动问好，再点击字母拼出14个单词。老师陪你完成26题挑战。",
+    description: "26题基础挑战＋40题进阶复习。主动问答、换角色、拼词和完整句子排序。",
     icon: MessageCircle,
     emoji: "👋",
     accent: "#FFF0C2",
     border: "hover:border-amber-300",
     action: "开始交朋友",
+  },
+  {
+    href: "/school-friends/",
+    eyebrow: "School Friends",
+    title: "校园礼貌岛",
+    description: "Good morning和Nice to meet you各自闯关，38题练习问早、感谢、初次见面和句子排序。",
+    icon: MessageCircle,
+    emoji: "🤝",
+    accent: "#D6F5E8",
+    border: "hover:border-teal-300",
+    action: "选择校园挑战",
   },
 ] as const;
 
@@ -57,7 +68,7 @@ export function AdventureHub() {
         <header className="mx-auto max-w-3xl text-center">
           <span className="inline-flex items-center gap-2 rounded-full bg-white px-4 py-2 text-sm font-black text-[#356FD1] shadow-sm ring-1 ring-blue-100"><Sparkles className="size-4" />选择今天的英语冒险</span>
           <h1 className="mt-5 text-4xl font-black tracking-[-0.04em] text-[#24324A] sm:text-5xl">想挑战哪一座岛？</h1>
-          <p className="mt-3 text-base font-bold leading-7 text-slate-500 sm:text-lg">四个板块独立保存进度，可以随时回来继续。</p>
+          <p className="mt-3 text-base font-bold leading-7 text-slate-500 sm:text-lg">各个板块独立保存进度，可以随时回来继续。</p>
         </header>
 
         <section className="mt-9 grid gap-5 md:grid-cols-2" aria-label="英语冒险板块">

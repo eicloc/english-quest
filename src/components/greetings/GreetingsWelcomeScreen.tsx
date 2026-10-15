@@ -51,6 +51,10 @@ export function GreetingsWelcomeScreen() {
           <p className="mt-4 text-xs font-semibold leading-6 text-slate-400">姓名会用于老师参考答句；孩子可以直接说自己的中文名字。</p>
         </section>
       </div>
+      <section className="paper-panel mt-8 flex flex-col gap-4 rounded-[28px] border-2 border-amber-200 p-5 sm:flex-row sm:items-center sm:justify-between" aria-labelledby="greeting-review-entry">
+        <div><h2 id="greeting-review-entry" className="text-2xl font-black">🧭 复习挑战 · 稍微难一点</h2><p className="mt-2 max-w-2xl font-semibold leading-7 text-slate-500">40题：换角色、主动反问、完整短对话、14个单词拼写和10道句子排序。原26题基础挑战和历史记录继续保留。</p></div>
+        <Link href="/greetings/review/" className="game-button inline-flex shrink-0 items-center justify-center gap-2 bg-amber-700 px-6 text-white">进入复习挑战<ArrowRight className="size-4" /></Link>
+      </section>
       {data.sessions.length > 0 && <section className="mt-10" aria-labelledby="greeting-history-title">
         <h2 id="greeting-history-title" className="flex items-center gap-2 text-xl font-black"><History className="size-5 text-amber-600" />挑战记录</h2>
         <div className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">{data.sessions.map((session) => <Link key={session.id} href={`/greetings/${session.completedAt ? "report" : "play"}/?session=${encodeURIComponent(session.id)}`} className="flex items-center justify-between gap-3 rounded-2xl border border-amber-100 bg-white p-4 hover:bg-amber-50">
